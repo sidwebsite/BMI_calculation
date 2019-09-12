@@ -143,8 +143,8 @@ var btnLoad = document.querySelector('#btnload');
 
 function loadData(e){
     e.preventDefault();
-    heightValue.value = "";
-    weightValue.value = "";
+    height.value = "";
+    weight.value = "";
     resultNumber.style.display = 'none';
     btnResult.style.display = 'block';
     levelName.style.display = 'none';
