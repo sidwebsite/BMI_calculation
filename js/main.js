@@ -127,7 +127,7 @@ function upData(item){
 function delData(e){
     e.preventDefault();
     var len = data.length;
-    data.splice(0,1);    
+    data.splice(0,len);    
     localStorage.setItem('bmiData', JSON.stringify(data));    
     if(len == 0){         
         alert('BMI紀錄已全部清除');
