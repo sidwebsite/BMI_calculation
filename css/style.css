@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.main {
+    background-color: #eee;
+}
+.header {
+    background-color: #424242;
+    padding: 3rem 0;
+}
+.formStyle label {
+    display: block;
+    font-size: 1.6rem;
+    color: #FFD366;
+}
+.formStyle input[type="text"] {
+    font-size: 1.6rem;
+    border: 2px solid #FFD366;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    width: 100%;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: rgba(255, 255, 255, 0.2);
+}  
+:-ms-input-placeholder { /* Internet Explorer */
+    color: rgba(255, 255, 255, 0.2);
+}  
+::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+/*看結果*/
+.result {
+    width: 120px;
+    height: 120px;
+    background-color: #FFD366;
+    border: 0;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: #424242;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.result:hover {
+    box-shadow: 0 0 10px #DEA821;
+    transition: 0.2s;
+}
+.result:active {
+    background-color: #DEA821;
+    box-shadow: none;
+}
+/**/
+.resultNumber {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    border: 3px solid #DEA821;
+    position: relative;
+    color: #DEA821;
+    display: none;
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.resultNumber a {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #DEA821;
+    border: 3px solid #424242;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 17px;
+}
+.resultNumber .bmiPosition {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.resultNumber .bmiPosition span {
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+}
+.resultNumber .bmiNumber {
+    font-size: 2rem
+}
+.bmiName {
+    color: #DEA821;
+    margin-left: 1.5rem;
+    display: none;
+}
+.color-green {
+    border-color: #86D73F;
+    color: #86D73F 
+}
+.color-green a {
+    background-color: #86D73F ;
+    border-color: #86D73F;
+}
+.color-blue {
+    border-color: #31BAF9;
+    color: #31BAF9 
+}
+.color-blue a {
+    background-color: #31BAF9;
+    border-color: #31BAF9;
+}
+.color-orange {
+    border-color: #FF982D;
+    color: #FF982D
+}
+.color-orange a {
+    background: #FF982D;
+    border-color: #FF982D;
+}
+.color-darkOrange {
+    border-color: #FF6C03;
+    color: #FF6C03
+}
+.color-darkOrange a {
+    background: #FF6C03;
+    border-color: #FF6C03;
+}
+.color-red {
+    border-color: #FF1200;
+    color: #FF1200 
+}
+.color-red a {
+    background: #FF1200;
+    border-color: #FF1200;
+}
+/*content*/
+#noDataText {
+    display: none;
+}
+
+.content {
+    padding: 3rem 0;
+}
+
+.data {
+    margin: 3rem 0;
+}  
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    background-color: #fff;
+    color: #424242;
+    border-left:  5px solid;
+    margin-bottom: 1.5rem;
+}  
+.wrapper .item {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+.wrapper .item:first-child {
+    text-align: left;
+    padding-left: 0.5rem;    
+}
+.wrapper .item small {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-right: .3rem
+}
+/**/
+.border-color-blue {
+    border-color: #31BAF9;
+}
+.border-color-green {
+    border-color: #86D73F;
+}
+.border-color-orange {
+    border-color: #FF982D
+}
+.border-color-darkOrange {
+    border-color: #FF6C03;
+}
+.border-color-red {
+    border-color: #FF1200;
+}
+/*footer*/
+.footer {
+    background-color: #FFD366;
+    padding: 2rem;
+    text-align: center;
+}
+figure {
+    margin-bottom: 0;
+}
+@media (max-width:992px){
+    .header figure img {
+        width: 100%;
+    }
+}
+@media (max-width:767px){
+    .wrapper {
+        display: block;
+    }
+    .wrapper .item:first-child {
+        width: 100%;
+        text-align: center;
+    }
+    .header figure img {
+        width: auto;
+    }
+}

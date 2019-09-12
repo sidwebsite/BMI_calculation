@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI計算</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2 d-flex justify-content-center align-items-center">
+                        <figure>
+                            <img src="images/BMICLogo.png" alt="">
+                        </figure>                        
+                    </div>
+                    <div class="col-lg-5 col-md-5">
+                        <form class="formStyle">
+                            <label>身高 cm</label>
+                            <input type="text" value="" id="heightId" placeholder="請輸入身高">
+                            <label>體重 kg</label>
+                            <input type="text" value="" id="weightId" placeholder="請輸入體重">
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-md-5 d-flex justify-content-start align-items-center">
+                        <!--看結果button-->
+                        <button class="result" id="btnResultId">
+                            看結果
+                        </button>   
+                        <!---->
+                        <div class="resultNumber">
+                            <div class="bmiPosition">
+                                <div class="bmiNumber" id="resultNum">99.99</div>                                
+                                <span>BMI</span>
+                            </div>
+                            <a href="#" id="btnload" title="清除重填">
+                                <img src="images/icons_loop.png" alt="">
+                            </a>
+                        </div>                            
+                        <h3 class="bmiName" id="name">重度肥胖</h3>                
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center mb-3 title">BMI紀錄</h1>
+                        <div class="data"></div>    
+                        <h3 class="text-center mb-5" id="noDataText">目前沒有BMI紀錄</h3>                    
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-danger rounded-pill" id="del">清除所以BMI紀錄</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <figure>
+                <img src="images/footerBMICLogo.png" alt="">
+            </figure>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
